@@ -4,7 +4,7 @@ import color from 'tinycolor2';
 import {Link} from 'react-router';
 
 import Nav from './Nav';
-import Logo from 'Logo';
+// import Logo from './Logo';
 
 @Radium
 export default class Aside extends React.Component {
@@ -13,7 +13,7 @@ export default class Aside extends React.Component {
         var links = ['about', 'contact', 'page'];
         return (
             <div style={[styles.base]}>
-                <Logo/>
+                {/*<Logo/>*/}
                 <Nav links={links}/>
             </div>
         )
