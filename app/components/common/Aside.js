@@ -1,12 +1,12 @@
 import React from 'react';
-import Radium from 'radium';
+// import Radium from 'radium';
 import color from 'tinycolor2';
 import {Link} from 'react-router';
 
 import Nav from './Nav';
 // import Logo from './Logo';
 
-@Radium
+// @Radium
 export default class Aside extends React.Component {
     render() {
 
