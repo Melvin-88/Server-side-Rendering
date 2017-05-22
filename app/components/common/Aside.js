@@ -1,5 +1,4 @@
-import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux';
+import React from 'react';
 // import Radium from 'radium';
 import color from 'tinycolor2';
 import {Link} from 'react-router';
@@ -8,7 +7,7 @@ import Nav from './Nav';
 import Logo from './Logo';
 
 // @Radium
-class Aside extends Component{
+export default class Aside extends React.Component {
     render() {
 
         var links = ['about', 'contact', 'page'];
@@ -33,4 +32,3 @@ var styles = {
 
 };
 
-export default connect(null, {})(Aside);
