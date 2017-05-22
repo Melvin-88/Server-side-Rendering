@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component, PropTypes} from 'react';
+import {connect} from 'react-redux';
 // import Radium from 'radium';
 import color from 'tinycolor2';
 import {Link} from 'react-router';
@@ -7,7 +8,7 @@ import Nav from './Nav';
 import Logo from './Logo';
 
 // @Radium
-export default class Aside extends React.Component {
+class Aside extends Component{
     static contextTypes = {
         router: PropTypes.object
     };
@@ -57,3 +58,4 @@ var styles = {
 
 };
 
+export default connect(null, {})(Aside);
