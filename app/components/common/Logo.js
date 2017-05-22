@@ -5,12 +5,11 @@ import {Link} from 'react-router';
 export default class Logo extends React.Component {
     render() {
         return (
-            {/*<div style={styles.logoWrapper}>*/}
-                {/*<Link to="/">*/}
-                    {/*<img style={styles.base} src="https://s3-us-west-2.amazonaws.com/chicagoview/icons/react-logo.png"/>*/}
-                {/*</Link>*/}
-            {/*</div>*/}
-            <div>111</div>
+            <div style={styles.logoWrapper}>
+                <Link to="/">
+                    <img style={styles.base} src="https://s3-us-west-2.amazonaws.com/chicagoview/icons/react-logo.png"/>
+                </Link>
+            </div>
         )
     }
 };

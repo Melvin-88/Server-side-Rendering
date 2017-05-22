@@ -4,16 +4,41 @@ import color from 'tinycolor2';
 import {Link} from 'react-router';
 
 import Nav from './Nav';
-// import Logo from './Logo';
+import Logo from './Logo';
 
 // @Radium
 export default class Aside extends React.Component {
+    static contextTypes = {
+        router: PropTypes.object
+    };
+    constructor(props){
+        super(props);
+        this.state= {
+            step: null
+        }
+    }
+    componentWillMount(){
+
+    }
+    componentDidMount(){
+        setTimeout(()=>{
+            this.setState({
+                step: true
+            })
+        }, 3000)
+    }
+    componentDidUpdate(){
+
+    }
+    componentWillUnmount(){
+
+    }
     render() {
 
         var links = ['about', 'contact', 'page'];
         return (
             <div style={[styles.base]}>
-                {/*<Logo/>*/}
+                {this.state.step && <Logo/>}
                 <Nav links={links}/>
             </div>
         )
