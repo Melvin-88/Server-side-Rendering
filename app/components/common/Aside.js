@@ -9,9 +9,6 @@ import Logo from './Logo';
 
 // @Radium
 class Aside extends Component{
-    static contextTypes = {
-        router: PropTypes.object
-    };
     constructor(props){
         super(props);
         this.state= {
