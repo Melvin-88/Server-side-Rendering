@@ -8,7 +8,8 @@ import {RoutingContext, match} from 'react-router';
 import routes from './routes';
 
 const env = process.env;
-var baseUrl = (env.USER && env.USER.indexOf('root') > -1) ? 'http://serverrender.4-com.pro/' : `${env.npm_package_config_appWebpackBaseUrl}`;
+// var baseUrl = (env.USER && env.USER.indexOf('root') > -1) ? 'http://serverrender.4-com.pro/' : `${env.npm_package_config_appWebpackBaseUrl}`;
+var baseUrl = (env.USER) ? 'http://serverrender.4-com.pro/' : `${env.npm_package_config_appWebpackBaseUrl}`;
 
 console.log(env.USER, env.USER.indexOf('root') > -1);
 
