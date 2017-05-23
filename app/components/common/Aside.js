@@ -8,34 +8,11 @@ import Logo from './Logo';
 
 // @Radium
 export default class Aside extends React.Component {
-    constructor(props){
-        super(props);
-        this.state= {
-            step: false;
-        }
-    }
-    componentWillMount(){
-
-    }
-    componentDidMount(){
-        setTimeout(()=>{
-            this.setState({
-                step: true
-            })
-        }, 3000)
-    }
-    componentDidUpdate(){
-
-    }
-    componentWillUnmount(){
-
-    }
     render() {
-
         var links = ['about', 'contact', 'page'];
         return (
             <div style={[styles.base]}>
-                {this.stste.step && <Logo/>}
+                <Logo/>
                 <Nav links={links}/>
             </div>
         )
