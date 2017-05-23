@@ -11,7 +11,8 @@ const env = process.env;
 var baseUrl = (env.USER && env.USER.indexOf('root') > -1) ? 'http://serverrender.4-com.pro/' : `${env.npm_package_config_appWebpackBaseUrl}`;
 
 
-const assetsPath = `${baseUrl}/${env.npm_package_version}`;
+const assetsPath = `${baseUrl}${env.npm_package_version}`;
+
 const publicPath = path.resolve('../public');
 
 let app = express();
