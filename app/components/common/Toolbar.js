@@ -1,7 +1,7 @@
 import React from 'react';
-// import Radium from 'radium';
+import Radium from 'radium';
 
-// @Radium
+@Radium
 export default class Toolbar extends React.Component {
     render() {
         return (
