@@ -4,7 +4,13 @@ import Toolbar from '../common/Toolbar';
 import YouTube from 'react-youtube';
 
 export default class Home extends React.Component {
-
+    constructor(props) {
+        super(props);
+        this.state = {date: new Date()};
+    }
+    click=()=>{
+        console.log(this.state);
+    }
     render() {
         const opts = {
             height: '490',
@@ -13,11 +19,12 @@ export default class Home extends React.Component {
                 autoplay: 0
             }
         };
-
         return (
             <div>
                 <Toolbar title="Web Application Startup Template with ReactJs" sv="toolbarStyles"/>
                 <div style={styles.containerStyles}>
+                    <br/>
+                    <button onClick={()=>{this.click()}}>click</button>
                     <br/>
                     <div style={styles.iframeContainer}>
                         <span style={styles.colorPlaylist}>Youtube Playlist</span>
